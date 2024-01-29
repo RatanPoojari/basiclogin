@@ -1,11 +1,11 @@
 import React from 'react'
 import './Login.css'
 import '../../App.css'
-
+import { Link, NavLink } from 'react-router-dom' 
 import video from '../../LoginAssets/back.mp4'
 import logo from '../../LoginAssets/logo.png'
 
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom' 
 import {FaUserShield} from 'react-icons/fa' 
 //import {bsFillShieldLockFill} from 'react-icons/bs'
 import {AiOutlineSwapRight} from 'react-icons/ai'
@@ -31,7 +31,7 @@ const Login = () => {
 
       </div>
 
-      </div>
+      </div> 
 
       <div className="formDiv flex">
         <div className="headerDiv">
