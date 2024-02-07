@@ -7,7 +7,7 @@ import logo from '../../LoginAssets/logo.png'
 
 // import { Link } from 'react-router-dom' 
 import {FaUserShield} from 'react-icons/fa' 
-//import {bsFillShieldLockFill} from 'react-icons/bs'
+import {BsFillShieldLockFill} from 'react-icons/bs'
 import {AiOutlineSwapRight} from 'react-icons/ai'
 
 const Login = () => {
@@ -36,11 +36,11 @@ const Login = () => {
       <div className="formDiv flex">
         <div className="headerDiv">
           <img src={logo} alt="Logo Image" />
-          <h3>Welcome Back!</h3>
+          <h3>Welcome!</h3>
         </div>
 
         <form action="" className='form grid'>
-          <span>Login status will go here</span>
+          <span className='showMessage'>Login status will go here</span>
           <div className="inputDiv">
             <label htmlFor="username">Username</label>
             <div className="input flex">
@@ -52,17 +52,19 @@ const Login = () => {
           <div className="inputDiv">
             <label htmlFor="password">Password</label>
             <div className="input flex">
-              <bsFillShieldLockFill className='icon'/>
+              <BsFillShieldLockFill className='icon'/>
               <input type="password" id='password' placeholder='Enter your Password'/>
             </div>
           </div>
 
+          <form action="http://localhost:3000/">
           <button type='submit' className='btn flex'>
             <span>Login</span>
-            <AiOutlineSwapRight className='icon' /> 
+            <AiOutlineSwapRight className='icon'/> 
           </button>
+          </form>
 
-          <span className='Forgot Password'>
+          <span className='forgotpassword'>
             Forgot your Password ? <a href="">Click Here</a>
           </span>
         </form>
